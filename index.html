@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clona cartão</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <section>
+        <div class="esquerda">
+            <div class="cartao">
+                <div class="cima">
+                    <div class="frente">
+                        <div class="bandeira"><img src="img/Mastercard-logo.svg.png" alt="" /></div>
+                        <div class="chip"><img src="img/chip.png" alt="" /></div>
+                        <div id="numeroCartao" class="numero">0000 0000 0000 0000</div>
+                        <div id="nomeCartao" class="nome">NOME NO CARTÃO</div>
+                        <div id="validadeCartao" class="validade">MM/AAAA</div>
+                    </div>
+                    <div class="none"></div>
+                </div>
+                <div class="baixo">
+                    <div class="verso">
+                        <div id="cvvCartao" class="cvv">000</div>
+                        <div class="faixa"></div>
+                    </div>
+                    <div class="none"></div>
+                </div>
+            </div>
+        </div>
+        <div class="direita">
+            <div class="titulo">
+                <h1>Veja se seu cartão vazou na internet</h1>
+            </div>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h4>Nome no cartão:</h4>
+                        <input required type="text" placeholder="NÃO SEI QUE LÁ DA SILVA" id="nome"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h4>Número do cartão:</h4>
+                        <input required type="text" id="numero" placeholder="0000 0000 0000 0000"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Data de validade:</h4>
+                        <input required type="text" id="validade" placeholder="MM/AAAA" maxlength="7" oninput="formatarData(this)"/>
+                    </td>
+                    <td>
+                        <h4>CVV:</h4>
+                        <input required type="text" id="cvv" placeholder="000"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="clonar">Verificar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="js/clona.js"></script>
+</body>
+</html>

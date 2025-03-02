@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.esquerda {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #1d1d27 50%, #ffffff 50%);
+}
+
+.cartao {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: aliceblue;
+    width: 70%;
+    height: 80%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cima,
+.baixo {
+    display: flex;
+    width: 100%;
+    height: 30%;
+}
+
+.baixo {
+    flex-direction: row-reverse;
+}
+
+.none {
+    width: 60%;
+}
+
+.frente,
+.verso {
+    display: flex;
+    background-color: #1d1d1d;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: #000000 0px 0px 10px;
+}
+.frente{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 3%;
+    gap: 3%;
+}
+.bandeira img{
+    width: 25%;
+}
+.verso{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 15%;
+    align-items: center;
+}
+.cvv{
+    display: flex;
+    width: 70%;
+    height: 20%;
+    justify-content: flex-end;
+    padding: 0 15% 0 0;
+    align-items: center;
+    color: black;
+    background-color: #d3d3d3;
+}
+.faixa{
+    width: 100%;
+    height: 22%;
+    margin: 5% 0 0 0;
+    background-color: #6b6b6b;
+}
+
+.chip img {
+    width: 40px;
+}
+
+/* Direita */
+
+.direita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+.titulo{
+    font-size: 50px;
+    margin: 5%;
+    width: 70%;
+}
+table
+{
+    width: 80%;
+    height: 50vh;
+}
+input, button{
+    width: 100%;
+    height: 60%;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e4e4e4;
+}
+
+button{
+    background-color: #636080;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover{
+    background-color: #4d4d5c;
+    transform: scale(1.1);
+}
