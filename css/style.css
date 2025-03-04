@@ -135,3 +135,34 @@ button:hover{
     background-color: #4d4d5c;
     transform: scale(1.1);
 }
+
+/*Media*/
+
+@media (max-width: 480px){
+    section{
+        flex-direction: column;
+    }
+    .direita{
+        width: 100%;
+        height: 50vh;
+    }
+    .esquerda{
+        width: 100%;
+        background: linear-gradient(180deg, #1d1d27 0%, #41416b 50%, #ffffff 100%);
+}
+    }
+    .cartao{
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+    }
+    .bandeira img{
+        width: 20%;
+    }
+    .chip img{
+        width: 30px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+}
