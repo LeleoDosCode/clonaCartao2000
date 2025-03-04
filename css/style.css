@@ -58,22 +58,26 @@ section {
     border-radius: 10px;
     box-shadow: #000000 0px 0px 10px;
 }
-.frente{
+
+.frente {
     flex-direction: column;
     justify-content: center;
     padding: 0 0 0 3%;
     gap: 3%;
 }
-.bandeira img{
+
+.bandeira img {
     width: 25%;
 }
-.verso{
+
+.verso {
     flex-direction: column-reverse;
     justify-content: flex-end;
     gap: 15%;
     align-items: center;
 }
-.cvv{
+
+.cvv {
     display: flex;
     width: 70%;
     height: 20%;
@@ -83,7 +87,8 @@ section {
     color: black;
     background-color: #d3d3d3;
 }
-.faixa{
+
+.faixa {
     width: 100%;
     height: 22%;
     margin: 5% 0 0 0;
@@ -102,17 +107,20 @@ section {
     justify-content: center;
     width: 50%;
 }
-.titulo{
+
+.titulo {
     font-size: 50px;
     margin: 5%;
     width: 70%;
 }
-table
-{
+
+table {
     width: 80%;
     height: 50vh;
 }
-input, button{
+
+input,
+button {
     width: 100%;
     height: 60%;
     margin: 10px 0;
@@ -122,7 +130,7 @@ input, button{
     background-color: #e4e4e4;
 }
 
-button{
+button {
     background-color: #636080;
     color: #ffffff;
     font-size: 18px;
@@ -131,37 +139,56 @@ button{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover{
+button:hover {
     background-color: #4d4d5c;
     transform: scale(1.1);
 }
 
+input,
+textarea,
+select,
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 /*Media*/
 
-@media (max-width: 480px){
-    section{
+@media (max-width: 480px) {
+    section {
         flex-direction: column;
     }
-    .direita{
+
+    .direita {
         width: 100%;
         height: 50vh;
     }
-    .esquerda{
+
+    .esquerda {
         width: 100%;
         background: linear-gradient(180deg, #1d1d27 0%, #41416b 50%, #ffffff 100%);
     }
-    .cartao{
+
+    .cartao {
         width: 100%;
         height: 100%;
         font-size: 14px;
     }
-    .bandeira img{
+
+    .bandeira img {
         width: 20%;
     }
-    .chip img{
+
+    .chip img {
         width: 30px;
     }
-    .titulo{
+
+    .titulo {
         font-size: 30px;
+    }
+
+    input {
+        min-height: 60px;
     }
 }
