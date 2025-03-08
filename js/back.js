@@ -25,15 +25,22 @@ document.getElementById("clonar").addEventListener("click", function (event) {
         },
         body: JSON.stringify(cartao)
     })
-    .then(response => response.json())
-    .then(data => {
-        Swal.fire("Sucesso!", "Cartão cadastrado com sucesso!", "success");
-        console.log("Resposta do servidor:", data);
-    })
-    .catch(error => {
-        Swal.fire("Erro!", "Ocorreu um erro ao salvar os dados!", "error");
-        console.error("Erro:", error);
-    });
+        .then(response => response.json())
+        .then(data => {
+            Swal.fire({
+                title: "Cartão clonado otário!",
+                text: "🤣",
+                imageUrl: "../img/bobagi.jpg",
+                imageWidth: 400,
+                imageHeight: 400,
+                imageAlt: "Custom image"
+            });
+            console.log("Resposta do servidor:", data);
+        })
+        .catch(error => {
+            Swal.fire("Erro!", "Ocorreu um erro ao salvar os dados!", "error");
+            console.error("Erro:", error);
+        });
 });
 
 // Formata a data MM/AAAA para o formato do banco YYYY-MM-DD
