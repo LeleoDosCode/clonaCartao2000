@@ -1,3 +1,5 @@
+const API_URL = "api-clonacartao2000.railway.internal";
+
 document.getElementById("clonar").addEventListener("click", function (event) {
     event.preventDefault(); // Evita que a página recarregue
 
@@ -18,7 +20,14 @@ document.getElementById("clonar").addEventListener("click", function (event) {
         cvv: cvv
     };
 
-    fetch("http://localhost:8080/api/cartoes", {
+    /*fetch("http://localhost:8080/api/cartoes", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(cartao)
+    })*/
+    fetch(API_URL, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
