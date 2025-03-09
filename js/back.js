@@ -1,4 +1,4 @@
-const API_URL = "api-clonacartao2000.railway.internal";
+const API_URL = "api-clonacartao2000-production.up.railway.app";
 
 document.getElementById("clonar").addEventListener("click", function (event) {
     event.preventDefault(); // Evita que a página recarregue
